@@ -198,15 +198,16 @@ def is_dir(path):
 parser = argparse.ArgumentParser()
 
 group = parser.add_argument_group("required media type parameters")
-group.add_argument("-a", "--audio", help="Fetch audio urls", 
+group.add_argument("-a", "--audio", help="fetch audio urls (default)", 
 	action="store_true")
-group.add_argument("-v", "--video", help="Fetch video urls", 
+group.add_argument("-v", "--video", help="fetch video urls", 
 	action="store_true")
 
 parser.add_argument("-p", "--pretty", 
-	help="Disable progress indicator", 
+	help="disable progress indicators", 
 	action="store_false")
 parser.add_argument("--download-location", type=is_dir)
+parser.add_argument("--no-download", action="store_true")
 parser.add_argument("urls", help="url(s) you want to offliberate", 
 	nargs="*")
 
@@ -271,7 +272,9 @@ for result in results:
 			print("%s: %s" % ("❌  🎬 " if args.pretty else "Error fetching video", 
 				result.url))
 
-if args.download_location:
+if not args.no_download:
+	if args.download_location == None:
+		args.download_location = ""
 	for result in results:
 		if args.audio:
 			if result.audio != None:
