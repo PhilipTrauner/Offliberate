@@ -1,0 +1,8 @@
+dist
+build
+*egg*
+__pycache__
+*.pyc
+.DS_Store
+*.cfg*
+Testing.py
