@@ -2,6 +2,8 @@
 
 <img align="right" src="https://cloud.githubusercontent.com/assets/9287847/22620779/6918a678-eb13-11e6-9f98-95eb90db133e.png">
 
+![Python version support: 3](https://img.shields.io/badge/python-3-green.svg)
+![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
 
 **Offliberate** allows you to harness the power of [Offliberty](http://offliberty.com/) right from your terminal.  
 
