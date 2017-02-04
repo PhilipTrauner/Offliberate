@@ -18,7 +18,7 @@ pip3 install offliberate
 ### Usage
 <p align="center">
 	<img src="https://cloud.githubusercontent.com/assets/9287847/22621335/887e73e0-eb21-11e6-81a4-cc92f6a464eb.gif">
-	Piping into <strong>Offliberate<strong>
+	Piping into <strong>Offliberate</strong>
 </p>
 
 |Parameter|Short|Description|      |
@@ -29,18 +29,16 @@ pip3 install offliberate
 |--download-location||Where should stuff go?|⬇|
 |--no-download||Only resolve download links |🔗|
 
-#### Examples
-Download a very special song (already escaped for your convenience):
+#### Examples  
+Download a very special song (already escaped for your convenience):  
 ```
 offliberate https://www.youtube.com/watch\?v\=dQw4w9WgXcQ
 ```
-
-Download the video of said song:
+Download the video of said song:  
 ```
 offliberate -v https://www.youtube.com/watch\?v\=dQw4w9WgXcQ
 ```
-
-Download the audio and video of this absolute masterpiece:
+Download the audio and video of this absolute masterpiece:  
 ```
 offliberate -v https://www.youtube.com/watch\?v\=dQw4w9WgXcQ
 ```
