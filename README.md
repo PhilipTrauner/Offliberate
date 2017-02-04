@@ -40,6 +40,6 @@ offliberate -v https://www.youtube.com/watch\?v\=dQw4w9WgXcQ
 ```
 Download the audio and video of this absolute masterpiece:  
 ```
-offliberate -v https://www.youtube.com/watch\?v\=dQw4w9WgXcQ
+offliberate -v -a https://www.youtube.com/watch\?v\=dQw4w9WgXcQ
 ```
 
