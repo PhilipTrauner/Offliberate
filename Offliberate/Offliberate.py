@@ -73,7 +73,8 @@ def _request(url, media_type, callback=None):
 	response = post("http://offliberty.com/off03.php", data=data) 
 	if response.status_code == 200 and (
 		not "Something went wrong" in response.text and
-		not "offliberty_giewu_bernardo_new" in response.text):
+		not "offliberty_giewu_bernardo_new" in response.text and
+		not "Hmmm... your URL looks wrong." in response.text):
 		if "mp3_file" in response.text:
 			out = _MediaContainer(url, audio=_locate_audio(response.text))
 		elif "vid_file" in response.text:
