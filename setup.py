@@ -81,7 +81,7 @@ Download the audio and video of this absolute masterpiece:
 
 setup(
 	name="Offliberate",
-	version="1.0",
+	version="1.1",
 	author="Philip Trauner",
 	author_email="philip.trauner@aol.com",
 	url="https://github.com/PhilipTrauner/Offliberate",
