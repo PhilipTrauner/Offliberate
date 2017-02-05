@@ -298,11 +298,10 @@ def entry_point():
 							download_file(result.video, 
 								args.download_location + resolve_file_name(result.video), 
 								pretty=args.pretty)
-			if progress == max_progress:
-				if version_info.major == 3:
-					print()
-				else:
-					print
+			if version_info.major == 3:
+				print()
+			else:
+				print
 
 	except KeyboardInterrupt:
 		pass
