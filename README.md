@@ -45,3 +45,37 @@ Download the audio and video of this absolute masterpiece:
 offliberate -v -a https://www.youtube.com/watch\?v\=dQw4w9WgXcQ
 ```
 
+### Tidbits
+**Offliberate** can also be used as a library.  
+
+`request(url, callback=None, audio=True, video=False)`
+
+* `url`: The url that should be resolved.
+* `callback`: Run asynchronously if a callback method is provided.
+* `audio`: Should audio be resolved?
+* `video`: Should video be resolved?
+
+#### Examples
+Synchronous:
+```python
+from Offliberate import request
+container = request("https://www.youtube.com/watch?v=le0BLAEO93g", audio=True, 
+	video=True)
+
+print(container.audio)
+print(container.video)
+print(container.url)
+```
+
+Asynchronous:
+```python
+from Offliberate import request
+
+def callback(container):
+	print(container.audio)
+	print(container.video)
+	print(container.url)
+
+request("https://www.youtube.com/watch?v=le0BLAEO93g", audio=True, 
+	video=True, callback=callback)
+```
