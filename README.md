@@ -79,3 +79,8 @@ def callback(container):
 request("https://www.youtube.com/watch?v=le0BLAEO93g", audio=True, 
 	video=True, callback=callback)
 ```
+
+### To-Do
+* Windows support  
+    Windows works if '-p' is specified.  
+    (Basically all fancy output has to be disabled)
