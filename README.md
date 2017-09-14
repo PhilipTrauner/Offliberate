@@ -1,9 +1,3 @@
-<p align="center">
-	❌ <a href="http://offliberty.com/">Offliberty</a> might have stopped working ❌
-</p>
-
-Here are some **alternatives**: [you-get](https://github.com/soimort/you-get), [youtube-dl](https://github.com/rg3/youtube-dl)  
-
 # Offliberate
 
 <img align="right" src="https://cloud.githubusercontent.com/assets/9287847/22620779/6918a678-eb13-11e6-9f98-95eb90db133e.png">
